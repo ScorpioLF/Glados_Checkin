@@ -6,7 +6,7 @@ const glados = async () => {
   const cookies = String(process.env.GLADOS).split('\n').filter(Boolean)
   for (const [index, cookie] of cookies.entries()) {
     try {
-      const domain = process.env.DOMAIN || 'glados.network'
+      const domain = process.env.DOMAIN || 'glados.cloud'
       const common = {
         'cookie': cookie,
         'referer': `https://${domain}/console/checkin`,
