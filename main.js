@@ -275,7 +275,7 @@ const glados = async () => {
     }
 
     try {
-      const domain = process.env.DOMAIN || 'glados.cloud'
+      const domain = process.env.DOMAIN || 'glados.network'
       const ua = account.ua
       const headers = { ...buildBrowserHeaders(ua, domain), cookie: account.cookie }
 
